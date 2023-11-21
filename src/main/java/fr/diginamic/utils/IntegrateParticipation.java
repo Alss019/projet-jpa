@@ -53,7 +53,7 @@ public class IntegrateParticipation {
 			// Début de la transaction
 			tr.begin();
 			// Parcours des lignes du fichier CSV et traite les données
-			for (int i = ligneD; i < 1000; i++) {
+			for (int i = ligneD; i < lines.size(); i++) {
 				// Extraire les colonnes de la ligne à l'aide du parseur
 				String[] ligne = Parseur.Colone(lines.get(i), i + 1);
 				// Recheche si l'equipe existe en BDD
